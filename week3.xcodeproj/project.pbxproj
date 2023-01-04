@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		118EE8AA296589F200EE721F /* baemin1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 118EE8A9296589F100EE721F /* baemin1.mp4 */; };
+		118EE8AC2965935700EE721F /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE8AB2965935700EE721F /* BannerCell.swift */; };
+		118EE8B02965D9C400EE721F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE8AF2965D9C400EE721F /* Location.swift */; };
 		11EAEA4E296487AC00088C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EAEA4D296487AC00088C01 /* AppDelegate.swift */; };
 		11EAEA50296487AC00088C01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EAEA4F296487AC00088C01 /* SceneDelegate.swift */; };
 		11EAEA52296487AC00088C01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EAEA51296487AC00088C01 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		118EE8A9296589F100EE721F /* baemin1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = baemin1.mp4; path = "../../../Downloads/3주차/baemin1.mp4"; sourceTree = "<group>"; };
+		118EE8AB2965935700EE721F /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		118EE8AF2965D9C400EE721F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		11EAEA4A296487AC00088C01 /* week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EAEA4D296487AC00088C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EAEA4F296487AC00088C01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,9 +109,12 @@
 				11EAEA4F296487AC00088C01 /* SceneDelegate.swift */,
 				11EAEA51296487AC00088C01 /* ViewController.swift */,
 				11EAEA53296487AC00088C01 /* Main.storyboard */,
+				118EE8AB2965935700EE721F /* BannerCell.swift */,
 				11EAEA56296487AE00088C01 /* Assets.xcassets */,
+				118EE8A9296589F100EE721F /* baemin1.mp4 */,
 				11EAEA58296487AE00088C01 /* LaunchScreen.storyboard */,
 				11EAEA5B296487AE00088C01 /* Info.plist */,
+				118EE8AF2965D9C400EE721F /* Location.swift */,
 			);
 			path = week3;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			files = (
 				11EAEA5A296487AE00088C01 /* LaunchScreen.storyboard in Resources */,
 				11EAEA57296487AE00088C01 /* Assets.xcassets in Resources */,
+				118EE8AA296589F200EE721F /* baemin1.mp4 in Resources */,
 				11EAEA55296487AC00088C01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11EAEA52296487AC00088C01 /* ViewController.swift in Sources */,
+				118EE8AC2965935700EE721F /* BannerCell.swift in Sources */,
+				118EE8B02965D9C400EE721F /* Location.swift in Sources */,
 				11EAEA4E296487AC00088C01 /* AppDelegate.swift in Sources */,
 				11EAEA50296487AC00088C01 /* SceneDelegate.swift in Sources */,
 			);
