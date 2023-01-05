@@ -13,6 +13,8 @@ class LocationViewController: UIViewController{
     @IBOutlet weak var searchBarImageVIew: UIImageView!
     @IBOutlet weak var navigationRightItem: UIBarButtonItem!
     @IBOutlet weak var navigationTitle: UINavigationItem!
+    
+    
     @IBOutlet weak var tv: UITableView!
     
     var nameList: [String] = [
@@ -28,6 +30,7 @@ class LocationViewController: UIViewController{
         tv.delegate = self
         tv.dataSource = self
         tv.register(UINib(nibName: "firstTableViewCell", bundle: nil), forCellReuseIdentifier: "firstTableViewCell")
+//        setNavigationSearchController()
     }
     
     func setNavigationTitle(){
@@ -54,8 +57,29 @@ class LocationViewController: UIViewController{
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
         {
             guard let SearchAddressViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchAddress") else { return }
+            
+//            SearchAddressViewController.modalPresentationStyle = .fullScreen
+//            SearchAddressViewController.navigationController?.isNavigationBarHidden = false
+            
+            
+//            present(SearchAddressViewController,animated: true)
             self.navigationController?.pushViewController(SearchAddressViewController, animated: true)
         }
+    func setNavigationSearchController(){
+//        let tapSearchControllerRecognizer = UITapGestureRecognizer(target: self, action: #selector(searchControllerTapped(tapGestureRecognizer:)))
+        
+        let searchController = UISearchController(searchResultsController: nil)
+//        searchController.searchBar.isUserInteractionEnabled = true
+//        searchController.searchBar.addGestureRecognizer(tapSearchControllerRecognizer)
+        
+        self.navigationItem.searchController = searchController
+    }
+//    @objc func searchControllerTapped(tapGestureRecognizer: UITapGestureRecognizer)
+//        {
+//            guard let SearchAddressViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchAddress") else { return }
+//            self.navigationController?.pushViewController(SearchAddressViewController, animated: true)
+//        }
+    
 }
 
 extension LocationViewController: UITableViewDelegate, UITableViewDataSource {
@@ -74,4 +98,5 @@ extension LocationViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+
 }

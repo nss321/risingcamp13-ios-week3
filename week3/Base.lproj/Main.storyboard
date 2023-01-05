@@ -516,7 +516,7 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CMH-4y-AJ0">
-                                <rect key="frame" x="0.0" y="151.33333333333331" width="393" height="666.66666666666674"/>
+                                <rect key="frame" x="0.0" y="161.33333333333331" width="393" height="656.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -524,7 +524,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CMH-4y-AJ0" firstAttribute="leading" secondItem="6f6-2q-uGC" secondAttribute="leading" id="9ag-ZO-411"/>
-                            <constraint firstItem="CMH-4y-AJ0" firstAttribute="top" secondItem="12I-Bj-2nj" secondAttribute="bottom" id="QFN-Lh-hs5"/>
+                            <constraint firstItem="CMH-4y-AJ0" firstAttribute="top" secondItem="12I-Bj-2nj" secondAttribute="bottom" constant="10" id="QFN-Lh-hs5"/>
                             <constraint firstItem="12I-Bj-2nj" firstAttribute="top" secondItem="6f6-2q-uGC" secondAttribute="top" id="az9-j6-UyZ"/>
                             <constraint firstItem="12I-Bj-2nj" firstAttribute="leading" secondItem="6f6-2q-uGC" secondAttribute="leading" constant="10" id="bCx-eb-PKL"/>
                             <constraint firstItem="6f6-2q-uGC" firstAttribute="trailing" secondItem="12I-Bj-2nj" secondAttribute="trailing" constant="10" id="hXu-gB-v0Z"/>
@@ -608,10 +608,10 @@
             </objects>
             <point key="canvasLocation" x="17.557251908396946" y="-2.1126760563380285"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Location Navigation Controller-->
         <scene sceneID="3Fu-j1-7NN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gdt-wP-vVS" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gdt-wP-vVS" customClass="LocationNavigationController" customModule="week3" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="goq-2p-Qdd">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>

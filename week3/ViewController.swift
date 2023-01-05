@@ -59,15 +59,8 @@ class ViewController: UIViewController {
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.leftBarButtonItem = barButton
         
-    
-//        let test = UIBarButtonItem(image: image, style: .done, target: self, action: #selector(presentModal(_:)))
-////        test.tintColor = .systemPink
-//        self.navigationItem.leftBarButtonItem = test
     }
     
-    @objc func buttonPressed(){
-        
-    }
     
     
     @IBAction func presentModal(_ sender: Any){
