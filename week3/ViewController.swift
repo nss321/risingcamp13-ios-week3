@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         bannerCollectionView.dataSource = self
         bannerTimer()
         setNavigationLeftItem()
+//        setLocationViewToRoot()
     }
 
     func bannerTimer(){
@@ -63,34 +64,62 @@ class ViewController: UIViewController {
 ////        test.tintColor = .systemPink
 //        self.navigationItem.leftBarButtonItem = test
     }
+    
     @objc func buttonPressed(){
         
     }
     
     
     @IBAction func presentModal(_ sender: Any){
-        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "Location") else { return }
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "Location") as? LocationViewController else { return }
         
-        vc.modalPresentationStyle = .pageSheet
+        let navigationController = UINavigationController(rootViewController: vc)
         
-        if let sheet = vc.sheetPresentationController {
+        navigationController.modalPresentationStyle = .pageSheet
+
+//        if let sheet = vc.sheetPresentationController {
             //지원할 크기 지정
 //            sheet.detents = [.medium(), .large()]
             //크기 변하는거 감지
 //            sheet.delegate = self
-           
+
             //시트 상단에 그래버 표시 (기본 값은 false)
-            sheet.prefersGrabberVisible = true
-            
+//            sheet.prefersGrabberVisible = true
+
             //처음 크기 지정 (기본 값은 가장 작은 크기)
             //sheet.selectedDetentIdentifier = .large
-            
+
             //뒤 배경 흐리게 제거 (기본 값은 모든 크기에서 배경 흐리게 됨)
             //sheet.largestUndimmedDetentIdentifier = .medium
-        }
-        present(vc, animated: true, completion: nil)
+//        }
+//        present(vc, animated: true, completion: nil)
+// ----------------------------------------------------------------------
+        // navigationController를 선언하고 rootView로 VC2를 할당
+        
+
+        // 화면 전환 커스텀, 필자는 PullScreen으로 띄우고, VC2에서 navigationBar가 보이지 않게 설정
+//        navigationController.modalPresentationStyle = .fullScreen
+
+        // 해당 navigationController를 모달 형태로 present
+        present(navigationController, animated: true)
+        
+    }
+    
+    func setLocationViewToRoot(){
+        // VC2를 코드 내에서 사용 가능하게 선언(StoryBoard 상에서 identifier 지정 필수)
+        guard let vc = storyboard?.instantiateViewController(identifier: "Location") as? LocationViewController else { return }
+
+        // navigationController를 선언하고 rootView로 VC2를 할당
+        let navigationController = UINavigationController(rootViewController: vc)
+
+        // 화면 전환 커스텀, 필자는 PullScreen으로 띄우고, VC2에서 navigationBar가 보이지 않게 설정
+        navigationController.modalPresentationStyle = .fullScreen
+
+        // 해당 navigationController를 모달 형태로 present
+//        present(navigationController, animated: true)
     }
 }
+
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     // 컬렉션 뷰의 개수 설정

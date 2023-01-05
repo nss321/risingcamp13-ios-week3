@@ -10,6 +10,10 @@
 		118EE8AA296589F200EE721F /* baemin1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 118EE8A9296589F100EE721F /* baemin1.mp4 */; };
 		118EE8AC2965935700EE721F /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE8AB2965935700EE721F /* BannerCell.swift */; };
 		118EE8B02965D9C400EE721F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118EE8AF2965D9C400EE721F /* Location.swift */; };
+		11A98FFD296672ED00C2811A /* ManageAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A98FFC296672ED00C2811A /* ManageAddressViewController.swift */; };
+		11A98FFF29667ECD00C2811A /* SearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A98FFE29667ECD00C2811A /* SearchAddressViewController.swift */; };
+		11A990022966834300C2811A /* firstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A990002966834300C2811A /* firstTableViewCell.swift */; };
+		11A990032966834300C2811A /* firstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A990012966834300C2811A /* firstTableViewCell.xib */; };
 		11EAEA4E296487AC00088C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EAEA4D296487AC00088C01 /* AppDelegate.swift */; };
 		11EAEA50296487AC00088C01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EAEA4F296487AC00088C01 /* SceneDelegate.swift */; };
 		11EAEA52296487AC00088C01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EAEA51296487AC00088C01 /* ViewController.swift */; };
@@ -42,6 +46,10 @@
 		118EE8A9296589F100EE721F /* baemin1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = baemin1.mp4; path = "../../../Downloads/3주차/baemin1.mp4"; sourceTree = "<group>"; };
 		118EE8AB2965935700EE721F /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 		118EE8AF2965D9C400EE721F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		11A98FFC296672ED00C2811A /* ManageAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAddressViewController.swift; sourceTree = "<group>"; };
+		11A98FFE29667ECD00C2811A /* SearchAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewController.swift; sourceTree = "<group>"; };
+		11A990002966834300C2811A /* firstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstTableViewCell.swift; sourceTree = "<group>"; };
+		11A990012966834300C2811A /* firstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = firstTableViewCell.xib; sourceTree = "<group>"; };
 		11EAEA4A296487AC00088C01 /* week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EAEA4D296487AC00088C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11EAEA4F296487AC00088C01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +123,10 @@
 				11EAEA58296487AE00088C01 /* LaunchScreen.storyboard */,
 				11EAEA5B296487AE00088C01 /* Info.plist */,
 				118EE8AF2965D9C400EE721F /* Location.swift */,
+				11A98FFC296672ED00C2811A /* ManageAddressViewController.swift */,
+				11A98FFE29667ECD00C2811A /* SearchAddressViewController.swift */,
+				11A990002966834300C2811A /* firstTableViewCell.swift */,
+				11A990012966834300C2811A /* firstTableViewCell.xib */,
 			);
 			path = week3;
 			sourceTree = "<group>";
@@ -244,6 +256,7 @@
 				11EAEA57296487AE00088C01 /* Assets.xcassets in Resources */,
 				118EE8AA296589F200EE721F /* baemin1.mp4 in Resources */,
 				11EAEA55296487AC00088C01 /* Main.storyboard in Resources */,
+				11A990032966834300C2811A /* firstTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +283,11 @@
 			files = (
 				11EAEA52296487AC00088C01 /* ViewController.swift in Sources */,
 				118EE8AC2965935700EE721F /* BannerCell.swift in Sources */,
+				11A98FFD296672ED00C2811A /* ManageAddressViewController.swift in Sources */,
 				118EE8B02965D9C400EE721F /* Location.swift in Sources */,
 				11EAEA4E296487AC00088C01 /* AppDelegate.swift in Sources */,
+				11A98FFF29667ECD00C2811A /* SearchAddressViewController.swift in Sources */,
+				11A990022966834300C2811A /* firstTableViewCell.swift in Sources */,
 				11EAEA50296487AC00088C01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

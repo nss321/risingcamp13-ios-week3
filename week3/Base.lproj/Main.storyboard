@@ -228,7 +228,7 @@
                                                                                     <fragment content="배달팁">
                                                                                         <attributes>
                                                                                             <color key="NSColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                            <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                                                            <font key="NSFont" metaFont="smallSystem"/>
                                                                                             <font key="NSOriginalFont" metaFont="smallSystem"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                         </attributes>
@@ -252,7 +252,7 @@
                                                                                         <attributes>
                                                                                             <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                            <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                                                            <font key="NSFont" metaFont="smallSystem"/>
                                                                                             <font key="NSOriginalFont" metaFont="smallSystem"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                         </attributes>
@@ -269,7 +269,7 @@
                                                                                         <attributes>
                                                                                             <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                            <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                                                            <font key="NSFont" metaFont="smallSystem"/>
                                                                                             <font key="NSOriginalFont" metaFont="smallSystem"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                         </attributes>
@@ -378,13 +378,13 @@
                                                                         <rect key="frame" x="0.0" y="150" width="150" height="428"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="북경탕수육" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCh-II-asO">
-                                                                                <rect key="frame" x="0.0" y="5" width="65" height="404"/>
+                                                                                <rect key="frame" x="0.0" y="5" width="65" height="18"/>
                                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5J-TJ-2iu">
-                                                                                <rect key="frame" x="0.0" y="414.00000000000011" width="91" height="14"/>
+                                                                                <rect key="frame" x="0.0" y="28" width="91" height="400"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="배달팁">
                                                                                         <attributes>
@@ -508,26 +508,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ZA-xq-gjS">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="주소 설정" id="XEW-gX-Rbb">
-                                        <barButtonItem key="rightBarButtonItem" title="편집" id="ooV-Ux-Ge6">
-                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="12I-Bj-2nj">
+                                <rect key="frame" x="10" y="103" width="373" height="48.333333333333343"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="12I-Bj-2nj" secondAttribute="height" multiplier="985:128" id="ndb-su-v9e"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CMH-4y-AJ0">
+                                <rect key="frame" x="0.0" y="151.33333333333331" width="393" height="666.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6f6-2q-uGC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CMH-4y-AJ0" firstAttribute="leading" secondItem="6f6-2q-uGC" secondAttribute="leading" id="9ag-ZO-411"/>
+                            <constraint firstItem="CMH-4y-AJ0" firstAttribute="top" secondItem="12I-Bj-2nj" secondAttribute="bottom" id="QFN-Lh-hs5"/>
+                            <constraint firstItem="12I-Bj-2nj" firstAttribute="top" secondItem="6f6-2q-uGC" secondAttribute="top" id="az9-j6-UyZ"/>
+                            <constraint firstItem="12I-Bj-2nj" firstAttribute="leading" secondItem="6f6-2q-uGC" secondAttribute="leading" constant="10" id="bCx-eb-PKL"/>
+                            <constraint firstItem="6f6-2q-uGC" firstAttribute="trailing" secondItem="12I-Bj-2nj" secondAttribute="trailing" constant="10" id="hXu-gB-v0Z"/>
+                            <constraint firstItem="6f6-2q-uGC" firstAttribute="bottom" secondItem="CMH-4y-AJ0" secondAttribute="bottom" id="mZi-k6-CMJ"/>
+                            <constraint firstItem="6f6-2q-uGC" firstAttribute="trailing" secondItem="CMH-4y-AJ0" secondAttribute="trailing" id="yUi-pV-JMN"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="주소 설정" id="LkA-mE-iP6"/>
+                    <navigationItem key="navigationItem" title="주소 설정" id="LkA-mE-iP6">
+                        <barButtonItem key="rightBarButtonItem" title="편집" id="Q7U-E9-jdf">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="C5G-r5-7wz" kind="show" id="ss0-my-uNU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navigationRightItem" destination="Q7U-E9-jdf" id="XGL-d5-waw"/>
+                        <outlet property="navigationTitle" destination="LkA-mE-iP6" id="NvV-WK-oKd"/>
+                        <outlet property="searchBarImageVIew" destination="12I-Bj-2nj" id="4xK-rA-Zik"/>
+                        <outlet property="tv" destination="CMH-4y-AJ0" id="yBN-0k-GBi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C89-Re-XYe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2628.2442748091603" y="-2.1126760563380285"/>
+        </scene>
+        <!--Manage Address View Controller-->
+        <scene sceneID="0Gy-Pf-BDg">
+            <objects>
+                <viewController storyboardIdentifier="ManageAddress" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C5G-r5-7wz" customClass="ManageAddressViewController" customModule="week3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s6O-9R-qEd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cHo-YV-wuT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="deI-0n-24H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTg-61-xnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3953" y="-2"/>
+        </scene>
+        <!--Search Address View Controller-->
+        <scene sceneID="nth-CH-GbN">
+            <objects>
+                <viewController storyboardIdentifier="SearchAddress" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Esg-6a-a94" customClass="SearchAddressViewController" customModule="week3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9k8-KO-q3S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9zv-N0-sY2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYO-Dl-GcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3952" y="664"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dNA-HU-rw2">
@@ -591,6 +644,7 @@
         <image name="menu2" width="150" height="149"/>
         <image name="menu3" width="149" height="150"/>
         <image name="point" width="254" height="186"/>
+        <image name="search" width="985" height="128"/>
         <image name="store" width="318" height="201"/>
         <image name="toGo" width="1007" height="203"/>
         <systemColor name="systemBackgroundColor">
