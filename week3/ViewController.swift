@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         bannerTimer()
         setNavigationLeftItem()
 //        setLocationViewToRoot()
+        setNavigationSearchController()
     }
 
     func bannerTimer(){
@@ -110,6 +111,11 @@ class ViewController: UIViewController {
 
         // 해당 navigationController를 모달 형태로 present
 //        present(navigationController, animated: true)
+    }
+    func setNavigationSearchController(){
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = "배고프니까 일단 검색!"
+        self.navigationItem.searchController = searchController
     }
 }
 
