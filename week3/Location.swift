@@ -18,9 +18,12 @@ class LocationViewController: UIViewController{
     @IBOutlet weak var tv: UITableView!
     
     var nameList: [String] = [
-        "사람1", "사람2", "사람3", "사람4", "사람5", "사람6", "사람7", "사람8", "사람9", "사람10", "사람11",
-        "사람12", "사람13", "사람14"
+        "우리집", "E8-10", "충북대학교 제2학생회관"
     ]
+    var addressList: [String] = [
+        "충북 청주시 서원구 성봉로 234-37 204호", "충북 청주시 서원구 충대로 1 제5공학관(E8-10)", "충북 청주시 서원구 충대로 1 충북대학교 제2학생회관 1층"
+    ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,6 +97,7 @@ extension LocationViewController: UITableViewDelegate, UITableViewDataSource {
         // indexPath.row => 행을 의미
         
         cell.nameLabel.text = nameList[indexPath.row]
+        cell.addressLabel.text = addressList[indexPath.row]
         
         
         return cell
